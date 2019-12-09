@@ -4,7 +4,7 @@ node {
          }
      
    stage("Docker Build") {
-              sudo su
+              //sudo su
               docker.build "ashhh24/newsum" 
             }
    
