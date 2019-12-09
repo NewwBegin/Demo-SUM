@@ -15,3 +15,4 @@ node {
           sh 'docker push ashhh24/newsum:latest'       
          }
    }
+}
