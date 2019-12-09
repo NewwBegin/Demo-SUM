@@ -5,8 +5,8 @@ node {
      
    stage("Docker Build") {
               //sudo su
-              sudo usermod -a -G docker jenkins
-              docker.build ("ashhh24/newsum")
+              //sudo usermod -a -G docker jenkins
+           def app = docker.build "ashhh24/newsum"
             }
    
    stage("Tag & Push image"){
