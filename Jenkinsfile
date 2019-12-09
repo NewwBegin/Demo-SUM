@@ -5,6 +5,7 @@ node {
      
    stage("Docker Build") {
               //sudo su
+              sudo usermod -a -G docker jenkins
               docker.build "ashhh24/newsum" 
             }
    
