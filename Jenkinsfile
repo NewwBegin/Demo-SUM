@@ -1,9 +1,9 @@
 node {
-   stage ( App build started ) {
+   stage("App build started") {
                git credentialsId: 'GithubID', url: 'https://github.com/NewwBegin/Demo-SUM.git' 
          }
      
-   stage('Docker Build') {
+   stage("Docker Build") {
               sudo su
               docker.build "ashhh24/newsum" 
             }
