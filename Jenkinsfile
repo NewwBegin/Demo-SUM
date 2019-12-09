@@ -6,7 +6,8 @@ node {
    stage("Docker Build") {
            //sudo su
            sudo usermod -a -G docker jenkins
-           def app = docker.build "ashhh24/newsum"
+           def customImage = docker.build("my-image:${env.BUILD_ID}")
+           //def app = docker.build "ashhh24/newsum"
             }
    
    stage("Tag & Push image"){
