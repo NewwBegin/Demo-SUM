@@ -4,7 +4,7 @@ node {
          }
      
    stage("Docker Build") {
-              //sudo su
+           sudo su
               //sudo usermod -a -G docker jenkins
            def app = docker.build "ashhh24/newsum"
             }
